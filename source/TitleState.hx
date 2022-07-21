@@ -372,9 +372,9 @@ class TitleState extends MusicBeatState
 		}
 		
 		titleText.antialiasing = ClientPrefs.globalAntialiasing;
+		titleText.scale.set(0.9, 0.9);
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
-		// titleText.screenCenter(X);
 		add(titleText);
 
 		var logo:FlxSprite = new FlxSprite().loadGraphic(Paths.image('logo'));
